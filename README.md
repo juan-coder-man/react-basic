@@ -2,6 +2,26 @@
 
 Aprender conceptos basicos de React
 
+## Docker (arranque recomendado)
+
+Requisito: [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+
+```bash
+# Desarrollo (hot-reload) → http://localhost:3000
+docker compose --profile dev up --build
+
+# Producción (nginx) → http://localhost:8080
+docker compose --profile prod up --build
+```
+
+Para detener:
+
+```bash
+docker compose --profile dev down
+# o
+docker compose --profile prod down
+```
+
 ## React
 
 React puede ser muy útil para el desarrollo de aplicaciones web modernas e interactivas. React es una biblioteca de JavaScript de código abierto utilizada para construir interfaces de usuario (UI) interactivas y de una sola página. Fue creado por Facebook y lanzado en 2013. React se ha convertido en una de las herramientas más populares para la creación de aplicaciones web modernas y escalables, especialmente aquellas que manejan grandes cantidades de datos y requieren actualizaciones frecuentes. La principal ventaja de React es su capacidad para manejar y actualizar la interfaz de usuario en tiempo real sin tener que recargar la página completa. Utiliza un enfoque basado en componentes, lo que significa que las interfaces de usuario se descomponen en componentes pequeños y reutilizables, lo que facilita la creación y el mantenimiento de aplicaciones complejas. React también se integra fácilmente con otras bibliotecas y frameworks de JavaScript, como Redux y Angular. Esto permite a los desarrolladores construir aplicaciones personalizadas para satisfacer las necesidades específicas de su proyecto.
